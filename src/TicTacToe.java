@@ -60,7 +60,7 @@ public class TicTacToe {
         public void actionPerformed(ActionEvent e) {
             // Update the board with the current player's move
             buttons[row][col].setText(currentPlayer);
-            buttons[row][col].setEnabled(false); // If a button is enabled, it can be clicked and will respond to user interactions.
+            buttons[row][col].setEnabled(false); // If a button is disabled, it can not be clicked and will not respond to user interactions.
             board[row][col] = currentPlayer;
 
             // Check for a win or tie
